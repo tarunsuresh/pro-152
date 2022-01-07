@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  
+  <script src="Base.js"></script>
+  
+</head>
+
+<body>
+
+  <a-scene background="color:green">
+
+    <a-camera position="0 0 15">  </a-camera>
+      <a-assets>      
+
+        <!--Add Code Here-->
+        <a-asset-item id="car-obj"src="./Fantastic Crift/tinker.obj">
+        </a-asset-item> 
+        <a-asset-item id="car-mtl"src="./Fantastic Crift/obj.mtl">
+        </a-asset-item> 
+  
+      </a-assets>
+      
+
+  
+      <a-cylinder scale="0.5 0.5 0.5" radius="20"></a-cylinder>
+    <a-entity ></a-entity>
+        
+        <a-entity obj-model="obj:#car-obj;mtl:#car-mtl" position="2 0 -5" rotation="-90 0 0" scale="0.1 0.1 0.1"car><a-entity/>
+    </a-entity>
+
+    
+    
+
+
+  </a-scene>
+
+</body>
+
+</html>
+
